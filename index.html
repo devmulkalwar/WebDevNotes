@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #35424a;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .note {
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #35424a;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Notes</h1>
+</header>
+
+<nav>
+    <a href="#note1">HTML Overview</a>
+    <a href="#note2">HTML Elements</a>
+    <a href="#note3">HTML Attributes</a>
+    <a href="#note4">Forms</a>
+    <a href="#note5">Semantic Tags</a>
+    <a href="#note6">Tables</a>
+    <a href="#note7">Multimedia</a>
+</nav>
+
+<div class="container">
+    <div class="note" id="note1">
+        <h2>Note 1: HTML Overview</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a webpage using a system of tags and attributes.</p>
+        <ul>
+            <li>HTML is the skeleton of a web page.</li>
+            <li>It consists of elements, attributes, and content.</li>
+            <li>HTML works in combination with CSS (styling) and JavaScript (functionality) to build modern websites.</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note2">
+        <h2>Note 2: HTML Elements</h2>
+        <p>HTML documents are made up of a variety of elements. An element typically consists of an opening tag, content, and a closing tag.</p>
+        <ul>
+            <li><strong>&lt;html&gt;</strong> - The root element of an HTML document.</li>
+            <li><strong>&lt;head&gt;</strong> - Contains meta-information, links to stylesheets, and other resources.</li>
+            <li><strong>&lt;body&gt;</strong> - Contains the visible content of the web page.</li>
+            <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Header tags used to define headings (h1 is the largest, h6 the smallest).</li>
+            <li><strong>&lt;p&gt;</strong> - Defines a paragraph of text.</li>
+            <li><strong>&lt;a&gt;</strong> - Defines a hyperlink.</li>
+            <li><strong>&lt;ul&gt;</strong>, <strong>&lt;ol&gt;</strong> - Unordered and ordered lists.</li>
+            <li><strong>&lt;img&gt;</strong> - Defines an image.</li>
+            <li><strong>&lt;div&gt;</strong> - A block-level container used for grouping and styling content.</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note3">
+        <h2>Note 3: HTML Attributes</h2>
+        <p>Attributes provide additional information about an HTML element. They are always written within the opening tag of an element.</p>
+        <ul>
+            <li><strong>id</strong> - Assigns a unique identifier to an element.</li>
+            <li><strong>class</strong> - Assigns one or more class names to an element, useful for CSS and JavaScript.</li>
+            <li><strong>href</strong> - Defines the URL for a hyperlink (used within the &lt;a&gt; tag).</li>
+            <li><strong>src</strong> - Defines the source of an image (used within the &lt;img&gt; tag).</li>
+            <li><strong>alt</strong> - Provides alternative text for an image if it cannot be displayed.</li>
+            <li><strong>title</strong> - Provides additional information when hovering over an element (e.g., a tooltip).</li>
+            <li><strong>style</strong> - Inline CSS styles for an element.</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note4">
+        <h2>Note 4: Forms</h2>
+        <p>Forms are used to collect input from users. The &lt;form&gt; element encapsulates the entire form structure.</p>
+        <ul>
+            <li><strong>&lt;form&gt;</strong> - The root element for creating forms.</li>
+            <li><strong>&lt;input&gt;</strong> - Defines an input field for text, checkboxes, radio buttons, etc.</li>
+            <li><strong>&lt;label&gt;</strong> - Associates a label with a form element.</li>
+            <li><strong>&lt;textarea&gt;</strong> - Defines a multi-line text input field.</li>
+            <li><strong>&lt;select&gt;</strong> - Creates a dropdown list of options.</li>
+            <li><strong>&lt;button&gt;</strong> - Defines a clickable button.</li>
+            <li><strong>method="get"</strong> vs. <strong>method="post"</strong> - Defines how form data is sent (GET appends data to the URL, POST sends it in the request body).</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note5">
+        <h2>Note 5: Semantic Tags</h2>
+        <p>Semantic HTML elements clearly describe their meaning in a human- and machine-readable way.</p>
+        <ul>
+            <li><strong>&lt;header&gt;</strong> - Represents the header of a section or page.</li>
+            <li><strong>&lt;footer&gt;</strong> - Represents the footer of a section or page.</li>
+            <li><strong>&lt;article&gt;</strong> - Represents a self-contained, independent piece of content.</li>
+            <li><strong>&lt;section&gt;</strong> - Represents a section of content.</li>
+            <li><strong>&lt;nav&gt;</strong> - Defines navigation links.</li>
+            <li><strong>&lt;aside&gt;</strong> - Represents content aside from the main content (like a sidebar).</li>
+            <li><strong>&lt;main&gt;</strong> - Represents the main content of the document.</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note6">
+        <h2>Note 6: Tables</h2>
+        <p>Tables are used to display data in rows and columns. They are created using the &lt;table&gt; element.</p>
+        <ul>
+            <li><strong>&lt;table&gt;</strong> - The container element for the table.</li>
+            <li><strong>&lt;tr&gt;</strong> - Defines a table row.</li>
+            <li><strong>&lt;th&gt;</strong> - Defines a table header cell (bold and centered by default).</li>
+            <li><strong>&lt;td&gt;</strong> - Defines a table data cell.</li>
+            <li><strong>&lt;thead&gt;</strong>, <strong>&lt;tfoot&gt;</strong>, <strong>&lt;tbody&gt;</strong> - Grouping elements for the table's header, footer, and body.</li>
+        </ul>
+    </div>
+
+    <div class="note" id="note7">
+        <h2>Note 7: Multimedia</h2>
+        <p>HTML allows for embedding multimedia such as audio and video into web pages.</p>
+        <ul>
+            <li><strong>&lt;audio&gt;</strong> - Embeds audio content.</li>
+            <li><strong>&lt;video&gt;</strong> - Embeds video content.</li>
+            <li><strong>&lt;source&gt;</strong> - Specifies multiple media resources for elements like &lt;audio&gt; and &lt;video&gt;.</li>
+            <li><strong>&lt;iframe&gt;</strong> - Embeds another HTML page within the current page (commonly used for embedding videos or other content).</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 HTML Notes Website</p>
+</footer>
+
+</body>
+</html>
