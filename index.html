@@ -28,7 +28,7 @@
             font-weight: bold;
         }
         nav a:hover {
-            color: #f4f4f4;
+            color: #2932ad;
         }
         .container {
             width: 80%;
@@ -61,6 +61,11 @@
         li {
             margin: 5px 0;
         }
+        code {
+            background-color: #f4f4f4;
+            padding: 0 5px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +93,15 @@
             <li>It consists of elements, attributes, and content.</li>
             <li>HTML works in combination with CSS (styling) and JavaScript (functionality) to build modern websites.</li>
         </ul>
+        <h3>Syntax:</h3>
+        <code>&lt;html&gt; &lt;head&gt; &lt;body&gt; ... &lt;/body&gt; &lt;/html&gt;</code>
+        <h3>Example:</h3>
+        <pre>
+&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;Hello, world!&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
     </div>
 
     <div class="note" id="note2">
@@ -104,6 +118,12 @@
             <li><strong>&lt;img&gt;</strong> - Defines an image.</li>
             <li><strong>&lt;div&gt;</strong> - A block-level container used for grouping and styling content.</li>
         </ul>
+        <h3>Example:</h3>
+        <pre>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Click Here&lt;/a&gt;
+        </pre>
     </div>
 
     <div class="note" id="note3">
@@ -118,6 +138,13 @@
             <li><strong>title</strong> - Provides additional information when hovering over an element (e.g., a tooltip).</li>
             <li><strong>style</strong> - Inline CSS styles for an element.</li>
         </ul>
+        <h3>Syntax:</h3>
+        <code>&lt;element attribute="value"&gt; ... &lt;/element&gt;</code>
+        <h3>Example:</h3>
+        <pre>
+&lt;a href="https://example.com" title="Visit Example"&gt;Example Link&lt;/a&gt;
+&lt;img src="image.jpg" alt="Description"&gt;
+        </pre>
     </div>
 
     <div class="note" id="note4">
@@ -132,6 +159,14 @@
             <li><strong>&lt;button&gt;</strong> - Defines a clickable button.</li>
             <li><strong>method="get"</strong> vs. <strong>method="post"</strong> - Defines how form data is sent (GET appends data to the URL, POST sends it in the request body).</li>
         </ul>
+        <h3>Example:</h3>
+        <pre>
+&lt;form method="post" action="/submit"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
     </div>
 
     <div class="note" id="note5">
@@ -146,6 +181,13 @@
             <li><strong>&lt;aside&gt;</strong> - Represents content aside from the main content (like a sidebar).</li>
             <li><strong>&lt;main&gt;</strong> - Represents the main content of the document.</li>
         </ul>
+        <h3>Example:</h3>
+        <pre>
+&lt;header&gt;Header Content&lt;/header&gt;
+&lt;nav&gt;Navigation Links&lt;/nav&gt;
+&lt;article&gt;Article Content&lt;/article&gt;
+&lt;footer&gt;Footer Content&lt;/footer&gt;
+        </pre>
     </div>
 
     <div class="note" id="note6">
@@ -158,6 +200,17 @@
             <li><strong>&lt;td&gt;</strong> - Defines a table data cell.</li>
             <li><strong>&lt;thead&gt;</strong>, <strong>&lt;tfoot&gt;</strong>, <strong>&lt;tbody&gt;</strong> - Grouping elements for the table's header, footer, and body.</li>
         </ul>
+        <h3>Example:</h3>
+        <pre>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;&lt;th&gt;Header 1&lt;/th&gt;&lt;th&gt;Header 2&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;&lt;td&gt;Data 1&lt;/td&gt;&lt;td&gt;Data 2&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </pre>
     </div>
 
     <div class="note" id="note7">
@@ -169,6 +222,17 @@
             <li><strong>&lt;source&gt;</strong> - Specifies multiple media resources for elements like &lt;audio&gt; and &lt;video&gt;.</li>
             <li><strong>&lt;iframe&gt;</strong> - Embeds another HTML page within the current page (commonly used for embedding videos or other content).</li>
         </ul>
+        <h3>Example:</h3>
+        <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mp3"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video element.
+&lt;/video&gt;
+        </pre>
     </div>
 
 </div>
